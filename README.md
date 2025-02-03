@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Weather App
+## 🌦 Overview
+ 
+### This is a weather forecasting application built with React, React Query, and OpenWeather API. It provides real-time weather updates, a 5-day forecast, and hourly weather data for a selected city. The app features a sleek UI with animated gradient backgrounds.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🚀 Features
 
-Currently, two official plugins are available:
+#### Real-time Weather Data: Fetches current weather conditions from OpenWeather API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### 5-Day Forecast: Displays upcoming weather conditions.
 
-## Expanding the ESLint configuration
+#### Hourly Forecast: Provides detailed weather updates for the selected day.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+#### Search Functionality: Users can search for any city worldwide.
 
-- Configure the top-level `parserOptions` property like this:
+#### Celsius/Fahrenheit Toggle: Allows switching between metric and imperial units.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+#### Auto-refresh: Updates weather data every 30 seconds.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+#### Error Handling: Notifies users of invalid city searches.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+#### Beautiful UI: Animated gradient backgrounds with a modern design.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 🛠 Tech Stack
+
+#### Frontend: React, TypeScript, Tailwind CSS
+
+#### API: xOpenWeather API
+
+#### State Management: React Context
+
+#### Notifications: React Hot Toast
+
+### 📦 Installation
+
+#### Clone the Repository
+
+```bash
+  git clone https://github.com/your-username/weather-app.git
+  cd weather-app
 ```
