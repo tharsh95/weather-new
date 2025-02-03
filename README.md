@@ -36,6 +36,26 @@
 #### Clone the Repository
 
 ```bash
-  git clone https://github.com/your-username/weather-app.git
+  git clone https://github.com/tharsh95/weather-new.git
   cd weather-app
+```
+
+#### Install dependencies
+
+```bash
+npm install
+```
+
+#### Set Up Environment Variables
+
+#### Create a .env file in the root directory and add:
+
+```bash
+VITE_OPEN_API_KEY = your open-api-key
+```
+
+#### Run the app
+
+```bash
+npm run dev
 ```
